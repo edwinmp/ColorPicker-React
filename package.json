@@ -1,0 +1,30 @@
+{
+  "name": "ColorPicker",
+  "version": "1.0.0",
+  "description": "Pick a color.",
+  "author": "Edwin P. Magezi",
+  "copyright": "M.I.T",
+  "main": "Gruntfile.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "1.0.1",
+    "grunt-contrib-clean": "^1.0.0",
+    "grunt-contrib-compress": "^1.2.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-contrib-csslint": "^1.0.0",
+    "grunt-newer": "^1.1.1",
+    "load-grunt-tasks": "^3.1.0",
+    "typescript": "^1.8.2"
+  },
+  "dependencies": {
+    "react": "^15.3.1",
+    "react-dom": "^15.3.1"
+  }
+}
