@@ -21,7 +21,13 @@ define(["require", "exports", "ColorPicker/lib/react"], function (require, expor
             var divStyle = {
                 backgroundColor: color,
             };
-            return (React.createElement("div", {className: "widgetname"}, React.createElement("form", null, React.createElement("div", {className: "input-group"}, React.createElement("input", {type: "text", className: "form-control", placeholder: "#rrggbb", value: color, onChange: this.onChange}), React.createElement("div", {className: "input-group-addon"}, React.createElement("input", {type: "color", defaultValue: color, onChange: this.onChange})))), React.createElement("div", {className: "widgetname-infoTextNode", style: divStyle}, this.props.messageString)));
+            return (React.createElement("div", { className: "widgetname" },
+                React.createElement("form", null,
+                    React.createElement("div", { className: "input-group" },
+                        React.createElement("input", { type: "text", className: "form-control", placeholder: "#rrggbb", value: color, onChange: this.onChange }),
+                        React.createElement("div", { className: "input-group-addon" },
+                            React.createElement("input", { type: "color", defaultValue: color, onChange: this.onChange })))),
+                React.createElement("div", { className: "widgetname-infoTextNode", style: divStyle }, this.props.messageString)));
         };
         Picker.prototype.onChange = function (event) {
             logger.debug("Picker: onChange ");

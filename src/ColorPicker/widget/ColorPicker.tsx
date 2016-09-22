@@ -170,7 +170,6 @@ let dojoColorPicker = dojoDeclare("ColorPicker.widget.ColorPicker", [_WidgetBase
     // dojo.declare.constructor is called to construct the widget instance. Implement to initialize non-primitive properties.
     result.constructor = function() {
         logger.debug( this.id + ".constructor");
-        this.progressInterval = 100;
     };
     for (let i in Source.prototype) {
         if (i !== "constructor" && Source.prototype.hasOwnProperty(i)) {

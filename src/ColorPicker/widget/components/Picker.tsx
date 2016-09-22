@@ -7,7 +7,7 @@ export interface IPickerState {
     color: string;
 }
 // Component PropTypes
-export interface IPickerProps {
+export interface IPickerProps extends React.Props<Picker> {
     color: string;
     readOnly: boolean;
     messageString: string;
